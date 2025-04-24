@@ -1,0 +1,44 @@
+// _header.scss, koja sadrži stilove za navigaciju,
+@use 'variables'as*;
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $button-padding;
+    box-shadow: $button-box-shadow;
+    margin-bottom: 10px;
+
+    .logo {
+        font-size: 24px;
+        font-weight: $buttons-font-weight;
+        color: $logo-orange;
+    }
+
+    .nav-links {
+        list-style: none;
+        padding: 0;
+
+        @include responsive($breakpoint-extra-small) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: $buttons-font-weight;
+
+            &:hover {
+                color: $logo-orange;
+            }
+
+        }
+    }
+}

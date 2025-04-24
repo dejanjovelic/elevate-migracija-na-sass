@@ -1,0 +1,13 @@
+// _content.scss, koja sadrži stilove za glavni deo stranice i
+@use 'variables' as *;
+body {
+    font-family: $main-fonts;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 32px;
+}
+
